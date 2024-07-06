@@ -251,5 +251,17 @@ public class rush {
 //     }
 // }
 
+// Пример сравнения строк
+// Приведем только один простой пример: нужно ввести с клавиатуры 
+// две строки и определить, одинаковые они, или нет. Вот как будет выглядеть этот код:
+
+// Scanner console = new Scanner(System.in);
+// String a = console.nextLine();
+// String b = console.nextLine();
+// String result = a.equals(b) ? "Одинаковые" : "Разные";
+// System.out.println(result);
+
+
+
 
 }
