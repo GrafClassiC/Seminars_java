@@ -1,4 +1,4 @@
-package Seminars_java;
+package Seminar1_java;
 
 import java.util.Scanner;
 
@@ -397,35 +397,61 @@ public class rush {
 // В программе необходимо использовать вложенные циклы while (цикл в цикле).
 // Вывод на экран должен происходить в цикле while.
 
-int height = 10;
-        int width = 20;
-        
-        // Внешний цикл для строк
-        int currentRow = 0;
-        while (currentRow < height) {
-            // Внутренний цикл для столбцов
-            int currentColumn = 0;
-            while (currentColumn < width) {
-                // Если это первая или последняя строка, выводим 'Б'
-                if (currentRow == 0 || currentRow == height - 1) {
-                    System.out.print("Б");
-                } 
-                // Если это не первая и не последняя строка, выводим ' '
-                else {
-                    // Если это первый или последний столбец, выводим 'Б'
-                    if (currentColumn == 0 || currentColumn == width - 1) {
-                        System.out.print("Б");
-                    } 
-                    // Если это не первый и не последний столбец, выводим ' '
-                    else {
-                        System.out.print(" ");
-                    }
-                }
-                currentColumn++;
-            }
-            System.out.println(); // Переход на новую строку
-            currentRow++;
-        }
+// int height = 10;
+// int width = 20;
+
+// // Внешний цикл для строк
+// int currentRow = 0;while(currentRow<height)
+// {
+//     // Внутренний цикл для столбцов
+//     int currentColumn = 0;
+//     while (currentColumn < width) {
+//         // Если это первая или последняя строка, выводим 'Б'
+//         if (currentRow == 0 || currentRow == height - 1) {
+//             System.out.print("Б");
+//         }
+//         // Если это не первая и не последняя строка, выводим ' '
+//         else {
+//             // Если это первый или последний столбец, выводим 'Б'
+//             if (currentColumn == 0 || currentColumn == width - 1) {
+//                 System.out.print("Б");
+//             }
+//             // Если это не первый и не последний столбец, выводим ' '
+//             else {
+//                 System.out.print(" ");
+//             }
+//         }
+//         currentColumn++;
+//     }
+//     System.out.println(); // Переход на новую строку
+//     currentRow++;
+// }
+// }}
+
+// Вводим данные с клавиатуры и сразу их выводим на экран, пока не будет введено слово "enough".
+// Слово "enough" выводить не нужно.
+// Для этого необходимо использовать бесконечный цикл (while(true)).
+
+// Подсказка: чтобы завершить бесконечный цикл, используй оператор break.
+
+// Требования:
+// •	Программа должна считывать данные c клавиатуры.
+// •	В программе необходимо использовать цикл while.
+// •	Для завершения бесконечного цикла необходимо использовать оператор break.
+// •	Программа должна выводить в консоли все введенные данные с новой строки, пока не будет введено слово "enough".
+
+
+
+
+    public static void main(String[] args) {
+        //напишите тут ваш код
+        Scanner console = new Scanner(System.in);
+      
+        while (true) {
+            String text = console.next();
+            if (text.equals("enough"))
+            break;
+        } 
+
     }
 }
-
