@@ -611,33 +611,126 @@
 // •	Если введено несколько вторых минимальных чисел, необходимо вывести любое.
 // •	Считывать данные с клавиатуры необходимо в цикле while.
 
-package seminar1;
+// package seminar1;
 
-import java.util.Scanner;
+// import java.util.Scanner;
+
+// /* 
+// Второе минимальное число из введенных
+// */
+
+// public class rush {
+//     public static void main(String[] args) {
+//         Scanner console = new Scanner(System.in);
+
+//         int min1 = Integer.MAX_VALUE;
+//         int min2 = Integer.MAX_VALUE;
+
+//         while (console.hasNextInt()) {
+//             int x = console.nextInt();
+//             if (x < min1) {
+//                 min2 = min1;
+//                 min1 = x;
+//             } else if (x > min1 && x < min2) {
+//                 min2 = x;
+//             }
+//         }
+
+//         System.out.println(min2);
+//     }
+// }
+
+// Напиши программу, в которой с помощью цикла for на экран будут выведены чётные числа от 1 до 15.
+// Каждое значение нужно выводить с новой строки.
+
+// Требования:
+// •	Программа должна выводить текст на экран.
+// •	Программа должна выводить чётные числа от 1 до 15. Каждое значение вывести с новой строки.
+// •	В программе необходимо использовать цикл for.
+
+
+// Напиши программу, в которой с помощью цикла for на экран будут выведены чётные числа от 1 до 15.
+// Каждое значение нужно выводить с новой строки.
+
+// Требования:
+// •	Программа должна выводить текст на экран.
+// •	Программа должна выводить чётные числа от 1 до 15. Каждое значение вывести с новой строки.
+// •	В программе необходимо использовать цикл for.
+
+// package seminar1;
+
+// /* 
+// Четные числа
+// */
+
+// public class rush {
+//     public static void main(String[] args) {
+//         //напишите тут ваш код
+        
+//         for (int x = 1; x <= 15; x++) {
+//             if (x % 2 == 0) {
+//                 System.out.println(x);
+//             }
+//         }
+
+//     }
+// }
+
+// В методе main с клавиатуры считывается 3 целых числа: start, end (start <= end), multiple.
+// Допиши программу, чтобы на экран выводилась сумма чисел от start (включительно) до end (не включительно), 
+// кратных multiple.
+// Для этого используй цикл for.
+// Подсказка: чтобы перейти к следующей итерации цикла, используй оператор continue.
+
+// Требования:
+// Программа должна вывести в консоль сумму чисел от start (включительно) до end (не включительно), 
+// кратных multiple.
+// В программе необходимо использовать цикл for.
+// В цикле for необходимо использовать оператор continue.
+
+// package seminar1;
+
+// import java.util.Scanner;
 
 /* 
-Второе минимальное число из введенных
+Сумма кратных чисел
+*/
+
+// public class rush {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         int start = scanner.nextInt();
+//         int end = scanner.nextInt();
+//         int multiple = scanner.nextInt();
+
+//         int sum = 0;
+//         //напишите тут ваш код
+//         for (int i = start; i < end; i++) {
+            
+//             if (i % multiple != 0) {
+//                 continue;
+//             }
+//             sum = sum + i;
+//         }
+
+//         System.out.println(sum);
+//     }
+// }
+
+package seminar1;
+
+/* 
+Рисуем треугольник
 */
 
 public class rush {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-
-        int min1 = Integer.MAX_VALUE;
-        int min2 = Integer.MAX_VALUE;
-
-        while (console.hasNextInt()) {
-            int x = console.nextInt();
-            if (x < min1) {
-                min2 = min1;
-                min1 = x;
-            } else if (x > min1 && x < min2) {
-                min2 = x;
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print('8');
             }
-        }
 
-        System.out.println(min2);
+            System.out.println();
+        }
     }
 }
-
-
