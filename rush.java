@@ -717,20 +717,65 @@
 //     }
 // }
 
-package seminar1;
+// package seminar1;
 
-/* 
-Рисуем треугольник
-*/
+// /* 
+// Рисуем треугольник
+// */
 
-public class rush {
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print('8');
-            }
+// public class rush {
+//     public static void main(String[] args) {
+//         for (int i = 0; i < 10; i++) {
+//             for (int j = 0; j <= i; j++) {
+//                 System.out.print('8');
+//             }
 
-            System.out.println();
-        }
-    }
-}
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Ввести с клавиатуры строку и число number, которое больше 0 и меньше 5.
+// Вывести на экран строку number раз с помощью цикла do-while. Каждое значение нужно вывести с новой строки.
+// Если число number меньше/равно 0 или больше/равно 5, то введенную строку нужно вывести на экран один раз.
+// Пример ввода:
+// абв
+// 2
+
+// Пример вывода:
+// абв
+// абв
+
+// Требования:
+// •	Программа должна считывать данные c клавиатуры.
+// •	Программа должна выводить данные на экран.
+// •	Программа должна выводить на экран строку number раз.
+// •	Программа должна выводить на экран строку один раз, если число number меньше/равно 0 или больше/равно 5.
+// •	В программе необходимо использовать цикл do-while.
+
+// package seminar1;
+
+// import java.util.Scanner;
+
+// /* 
+// Хорошего не бывает много
+// */
+
+// public class rush{
+//     public static void main(String[] args) {
+//         //напишите тут ваш код
+//         Scanner console = new Scanner(System.in);
+//         String str = console.nextLine();
+//         int number = console.nextInt();
+//         if (number <= 0 || number >= 5) {
+//             System.out.println(str);
+//             return;
+//         }
+//         int i = 0;
+//         do {
+//             System.out.println(str);
+//             i++;
+//         } while (i < number);
+//     }
+// }
+
