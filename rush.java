@@ -836,24 +836,43 @@
 // Программа должна выводить число на экран.
 // Программа должна выводить на экран вещественное число - результат деления первого введенного целого числа на второе.
 
-package seminar1;
+// package seminar1;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-/* 
-Share a Coke
-*/
+// /* 
+// Share a Coke
+// */
 
-public class rush {
-    public static void main(String[] args) {
-        //напишите тут ваш код
+// public class rush {
+//     public static void main(String[] args) {
+//         //напишите тут ваш код
         
-        Scanner console = new Scanner(System.in);
-        int b = console.nextInt();
-        int ch = console.nextInt();
-        System.out.println(b * 1.0 / ch);
+//         Scanner console = new Scanner(System.in);
+//         int b = console.nextInt();
+//         int ch = console.nextInt();
+//         System.out.println(b * 1.0 / ch);
 
-    }
-}
+//     }
+// }
+
+
+/**
+ * Метод Math.round() округляет число до ближайшего целого:
+long x = Math.round(вещественное_число)
+
+округление к ближайшему целому
+int x = (int) Math.round(вещественное_число)
+
+Метод Math.ceil()
+Метод Math.ceil() округляет число до целого вверх.
+
+Метод Math.floor()
+Метод Math.floor() округляет число до целого вниз. (Хотя, для округления числа до целого вниз, 
+будет проще использовать просто оператор приведения типа — (int):
+Команда	Результат
+int x = (int) 4.9)
+**/
+
 
 
