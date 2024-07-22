@@ -80,7 +80,7 @@ public class NotebookStore {
         System.out.println("4 - Цвет");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Очистка буфера
+        scanner.nextLine();
 
         switch (choice) {
             case 1:
